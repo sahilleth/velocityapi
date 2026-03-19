@@ -1,4 +1,4 @@
-## [0.2.0] - 2026-03-19
+## [1.0.0] - 2026-03-19
 ### Added
 - Vert.x Web engine (Netty-backed event loop)
 - `@Blocking` annotation for safe blocking handlers

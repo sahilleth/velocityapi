@@ -6,7 +6,7 @@ VelocityAPI is configured to publish to Maven Central via Sonatype staging using
 
 - **1) Create Sonatype account + request namespace**
   - Create an account on Sonatype Central / OSSRH.
-  - Request the namespace for your `groupId` (currently `io.velocityapi`).
+  - Request the namespace for your `groupId` (currently `io.github.sahilleth`).
 
 - **2) Create a GPG key for signing**
   - Create a signing key, publish it, and make sure your Sonatype account has the signing key info.

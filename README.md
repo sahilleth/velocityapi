@@ -19,6 +19,9 @@ VelocityAPI is a FastAPI-style annotation layer for Java on top of Vert.x Web: b
 - The server auto-serves `GET /docs` (Swagger UI) and `GET /openapi.json`.
 - Validation errors return JSON with HTTP `422 Unprocessable Entity`.
 
+## Local Release Credentials
+If you create a local `sonatype.txt` for OSSRH / Maven Central release credentials, it is gitignored and should not be committed to GitHub (it stays local).
+
 ## Benchmark
 Run:
 `java -jar target/velocityapi-fat.jar --bench`

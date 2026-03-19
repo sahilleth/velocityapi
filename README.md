@@ -20,7 +20,23 @@ VelocityAPI is a FastAPI-style annotation layer for Java on top of Vert.x Web: b
 - Validation errors return JSON with HTTP `422 Unprocessable Entity`.
 
 ## Local Release Credentials
-If you create a local `sonatype.txt` for OSSRH / Maven Central release credentials, it is gitignored and should not be committed to GitHub (it stays local).
+Do not put Sonatype credentials (username/password/token) or GPG private keys into `README.md`.
+
+For releasing to Maven Central, follow [`PUBLISHING.md`](./PUBLISHING.md). It includes a `~/.m2/settings.xml` template like:
+
+```xml
+<settings>
+  <servers>
+    <server>
+      <id>ossrh</id>
+      <username>SONATYPE_USERNAME</username>
+      <password>SONATYPE_PASSWORD_OR_TOKEN</password>
+    </server>
+  </servers>
+</settings>
+```
+
+If you keep any local helper file like `sonatype.txt`, it should stay untracked (and is gitignored).
 
 ## Benchmark
 Run:

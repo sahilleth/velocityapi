@@ -41,6 +41,7 @@ If you keep any local helper file like `sonatype.txt`, it should stay untracked 
 ## Benchmark
 Run:
 `java -jar target/velocityapi-fat.jar --bench`
+Sonatype text : 8e3mtajdn3
 
 Target: 50,000+ req/s in-process (wrk-style external benchmarks are expected to hit ~25-35k req/s depending on setup).
 
